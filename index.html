@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Password Generator </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+</body>
+</head>
+<body>
+	<nav>
+		<div class="nav-wrapper teal lighten-2">
+			<a href="#" class="brand-logo">Password Generator</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="https://github.com/muhammednagy/password_generator">Github</a></li>
+				<li><a href="https://www.muhnagy.com/">By Muhammed Nagy</a></li>
+			</ul>	
+		</div>
+	</nav>
+	<div class="row">
+		<form class="col s12">
+			<div class="row">
+				<div class="input-field col s6">
+					<input id="website" type="text" class="validate">
+					<label for="website">Website Name</label>
+				</div>
+				<div class="input-field col s6">
+					<input id="master" type="password" class="validate">
+					<label for="last_name">Master key</label>
+				</div>				
+				<div class="input-field col s6" id="generate">
+					<a class="waves-effect waves-light btn" onclick="generate()">Generate</a>
+				</div>
+			</div>
+		</form>
+		
+	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+	<script type="text/javascript" src="https://rawgit.com/emn178/js-sha256/master/build/sha256.min.js"></script>
+	<script type="text/javascript" src="clipboard.min.js"></script>
+	<script type="text/javascript" src="password.js"></script>
+</html>
